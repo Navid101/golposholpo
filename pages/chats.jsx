@@ -2,7 +2,7 @@ import React,{useRef,useState,useEffect} from 'react'
 import { useRouter } from 'next/router'
 import { ChatEngine } from 'react-chat-engine'
 import auth from '../utils/firebase'
-import {useAuth} from '../pages/contexts/AuthContext'
+import {useAuth} from './components/AuthContext'
 import axios from 'axios'
 const Chats = () => {
     const router = useRouter();
