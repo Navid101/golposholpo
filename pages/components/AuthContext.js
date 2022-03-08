@@ -6,7 +6,7 @@ const AuthContext = React.createContext();
 
 export const useAuth = ()=> useContext(AuthContext);
 
-export const AuthProvider = ({children})=>{
+const AuthProvider = ({children})=>{
     const router = useRouter()
     const {pid} = router.query
     const [loading,setLoading] = useState(true)
@@ -27,4 +27,6 @@ export const AuthProvider = ({children})=>{
         </AuthContext.Provider>
     )
 }
+
+export default AuthProvider
 
