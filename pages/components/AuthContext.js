@@ -16,7 +16,7 @@ const AuthProvider = ({children})=>{
             setUser(user);
             setLoading(false);
             if(user){
-                router.push('/Chats')
+                router.push('/chats')
             }
         })
     },[user,pid])
