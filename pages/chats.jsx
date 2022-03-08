@@ -1,7 +1,7 @@
 import React,{useRef,useState,useEffect} from 'react'
 import { useRouter } from 'next/router'
 import { Avatar, ChatEngine } from 'react-chat-engine'
-import auth from '../ls/firebase'
+import auth from '../utils/firebase'
 import { useAuth } from '.contexts/AuthContext'
 import axios from 'axios'
 const Chats = () => {
