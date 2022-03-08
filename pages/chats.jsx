@@ -1,10 +1,10 @@
 import React,{useRef,useState,useEffect} from 'react'
 import { useRouter } from 'next/router'
 import { Avatar, ChatEngine } from 'react-chat-engine'
-import auth from '../utils/firebase'
-import { useAuth } from './contexts/AuthContext'
+import auth from '../ls/firebase'
+import { useAuth } from '.contexts/AuthContext'
 import axios from 'axios'
-const chats = () => {
+const Chats = () => {
     const router = useRouter();
     const [loading,setLoading] = useState(true)
     const {user} = useAuth()
@@ -76,4 +76,4 @@ const chats = () => {
   )
 }
 
-export default chats
+export default Chats
